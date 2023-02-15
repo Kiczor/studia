@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/szymon/modelf/przyklad/PaymentCalculator-master/View/View.fsproj": {}
+  },
+  "projects": {
+    "/home/szymon/modelf/przyklad/PaymentCalculator-master/View/View.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/szymon/modelf/przyklad/PaymentCalculator-master/View/View.fsproj",
+        "projectName": "View",
+        "projectPath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/View/View.fsproj",
+        "packagesPath": "/home/szymon/.nuget/packages/",
+        "outputPath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/View/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/szymon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/sdk/6.0.405/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj": {
+                "projectPath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.7, )",
+              "generatePathProperty": true
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "MathNet.Numerics.FSharp": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj",
+        "projectName": "ViewModel",
+        "projectPath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj",
+        "packagesPath": "/home/szymon/.nuget/packages/",
+        "outputPath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/szymon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/sdk/6.0.405/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[6.0.7, )",
+              "generatePathProperty": true
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "MathNet.Numerics.FSharp": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

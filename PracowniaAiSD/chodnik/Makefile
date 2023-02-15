@@ -1,0 +1,1 @@
+CXXFLAGS = -O2 -Wall -Wshadow -Wextra -ftrapv -std=c++11

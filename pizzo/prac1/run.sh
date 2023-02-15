@@ -1,0 +1,1 @@
+./aut < test.in

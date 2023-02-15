@@ -1,0 +1,96 @@
+{
+  "parametry": ["kalorie", "białko", "węglowodany", "pełnia_smaku", "tłuszcze"],
+  "składniki": [
+    {
+      "nazwa": "pierogi",
+      "kalorie": 300.0,
+      "białko": 12,
+      "węglowodany": 42,
+      "tłuszcze": 42,
+      "pełnia_smaku": 100
+    },
+    {
+      "nazwa": "bakuś",
+      "kalorie": 100.0,
+      "białko": 10,
+      "węglowodany": 42,
+      "tłuszcze": 0,
+      "pełnia_smaku": 200
+    },
+    {
+      "nazwa": "suszone_pomidory",
+      "kalorie": 20,
+      "białko": 2,
+      "węglowodany": 2,
+      "tłuszcze": 2,
+      "pełnia_smaku": 0
+    },
+    {
+      "nazwa": "banany",
+      "kalorie": 30,
+      "białko": 4,
+      "węglowodany": 10,
+      "tłuszcze": 2,
+      "pełnia_smaku": 8
+    },
+    {
+      "nazwa": "ser",
+      "kalorie": 50,
+      "białko": 15,
+      "węglowodany": 1,
+      "tłuszcze": 21,
+      "pełnia_smaku": 45
+    },
+    {
+      "nazwa": "chleb",
+      "kalorie": 6,
+      "białko": 2,
+      "węglowodany": 20,
+      "tłuszcze": 2,
+      "pełnia_smaku": 7
+    },
+    {
+      "nazwa": "wspaniały_bekon",
+      "kalorie": 400,
+      "białko": 15,
+      "węglowodany": 2,
+      "tłuszcze": 40,
+      "pełnia_smaku": 1200
+    },
+    {
+      "nazwa": "sos_czosnkowy",
+      "kalorie": 200,
+      "białko": 2,
+      "węglowodany": 10,
+      "tłuszcze": 15,
+      "pełnia_smaku": 50
+    }
+  ],
+  "konflikty": [
+    { "nazwa1": "sos_czosnkowy", "nazwa2": "banany" },
+    { "nazwa1": "suszone_pomidory", "nazwa2": "banany" },
+    { "nazwa1": "pierogi", "nazwa2": "banany" },
+    { "nazwa1": "bakuś", "nazwa2": "wspaniały_bekon" },
+    { "nazwa1": "bakuś", "nazwa2": "sos_czosnkowy" },
+    { "nazwa1": "bakuś", "nazwa2": "pierogi" },
+    { "nazwa1": "bakuś", "nazwa2": "ser" },
+    { "nazwa1": "bakuś", "nazwa2": "suszone_pomidory" },
+    { "nazwa1": "bakuś", "nazwa2": "banany" },
+    { "nazwa1": "bakuś", "nazwa2": "chleb" }
+
+  ],
+  "cel": {
+    "kalorie": { "min": 1700, "max": 2000 },
+    "białko": { "min": 160, "max": 5000 },
+    "węglowodany": { "min": 100, "max": 400 },
+    "tłuszcze": { "min": 15, "max": 70 },
+    "pełnia_smaku": { "min": 1000, "max": 100000 }
+  },
+  "cel_tygodniowy": {
+    "kalorie": { "min": 10000, "max": 20000 },
+    "białko": { "min": 600, "max": 100000 },
+    "węglowodany": { "min": 400, "max": 1300 },
+    "tłuszcze": { "min": 300, "max": 500 },
+    "pełnia_smaku": { "min": 12000, "max": 1000000 }
+  }
+}

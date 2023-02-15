@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "o80AQxL4JWhxcSVYZTbvuINm07J8hPTGv6ip6/bw6sKUbcqr6zTUIQw2a6NQnFdOAlMhQBRnnPjYVmV2XJ3Rqw==",
+  "success": true,
+  "projectFilePath": "/home/szymon/modelf/przyklad/PaymentCalculator-master/ViewModel/ViewModel.fsproj",
+  "expectedPackageFiles": [
+    "/home/szymon/.nuget/packages/fsharp.core/6.0.7/fsharp.core.6.0.7.nupkg.sha512",
+    "/home/szymon/.nuget/packages/mathnet.numerics/5.0.0/mathnet.numerics.5.0.0.nupkg.sha512",
+    "/home/szymon/.nuget/packages/mathnet.numerics.fsharp/5.0.0/mathnet.numerics.fsharp.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

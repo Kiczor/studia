@@ -1,0 +1,395 @@
+{
+    "parametry": [
+        "węglowodany",
+        "magnez",
+        "wapń",
+        "witaminki",
+        "tłuszcze",
+        "kolor",
+        "białko",
+        "szczęście"
+    ],
+    "składniki": [
+        {
+            "nazwa": "ziemniak",
+            "węglowodany": 200,
+            "magnez": 2,
+            "wapń": 2,
+            "witaminki": 0,
+            "tłuszcze": 2,
+            "kolor": 7,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "batat",
+            "węglowodany": 200,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 2,
+            "tłuszcze": 0,
+            "kolor": 9,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "burak",
+            "węglowodany": 17,
+            "magnez": 2,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "marchewka",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 2,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "pomidor",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 4,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "jabłko",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 2,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "maliny",
+            "węglowodany": 17,
+            "magnez": 4,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "kotlet",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 4,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "śliwka",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 2,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "gruszka",
+            "węglowodany": 17,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 4,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 0
+        },
+        {
+            "nazwa": "jogurt",
+            "węglowodany": 0,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 50,
+            "szczęście": 120
+        },
+        {
+            "nazwa": "mleko",
+            "węglowodany": 3,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 4
+        },
+        {
+            "nazwa": "szynka",
+            "węglowodany": 3,
+            "magnez": 0,
+            "wapń": 0,
+            "witaminki": 0,
+            "tłuszcze": 0,
+            "kolor": 0,
+            "białko": 0,
+            "szczęście": 6
+        }
+    ],
+    "konflikty": [
+        {
+            "nazwa1": "ziemniak",
+            "nazwa2": "burak"
+        },
+        {
+            "nazwa1": "ziemniak",
+            "nazwa2": "marchewka"
+        },
+        {
+            "nazwa1": "ziemniak",
+            "nazwa2": "pomidor"
+        },
+        {
+            "nazwa1": "ziemniak",
+            "nazwa2": "jabłko"
+        },
+        {
+            "nazwa1": "ziemniak",
+            "nazwa2": "szynka"
+        },
+        {
+            "nazwa1": "batat",
+            "nazwa2": "maliny"
+        },
+        {
+            "nazwa1": "batat",
+            "nazwa2": "kotlet"
+        },
+        {
+            "nazwa1": "batat",
+            "nazwa2": "śliwka"
+        },
+        {
+            "nazwa1": "batat",
+            "nazwa2": "gruszka"
+        },
+        {
+            "nazwa1": "batat",
+            "nazwa2": "mleko"
+        },
+        {
+            "nazwa1": "burak",
+            "nazwa2": "marchewka"
+        },
+        {
+            "nazwa1": "burak",
+            "nazwa2": "pomidor"
+        },
+        {
+            "nazwa1": "burak",
+            "nazwa2": "jabłko"
+        },
+        {
+            "nazwa1": "marchewka",
+            "nazwa2": "burak"
+        },
+        {
+            "nazwa1": "marchewka",
+            "nazwa2": "pomidor"
+        },
+        {
+            "nazwa1": "marchewka",
+            "nazwa2": "jabłko"
+        },
+        {
+            "nazwa1": "pomidor",
+            "nazwa2": "burak"
+        },
+        {
+            "nazwa1": "pomidor",
+            "nazwa2": "marchewka"
+        },
+        {
+            "nazwa1": "pomidor",
+            "nazwa2": "jabłko"
+        },
+        {
+            "nazwa1": "jabłko",
+            "nazwa2": "burak"
+        },
+        {
+            "nazwa1": "jabłko",
+            "nazwa2": "marchewka"
+        },
+        {
+            "nazwa1": "jabłko",
+            "nazwa2": "pomidor"
+        },
+        {
+            "nazwa1": "maliny",
+            "nazwa2": "kotlet"
+        },
+        {
+            "nazwa1": "maliny",
+            "nazwa2": "śliwka"
+        },
+        {
+            "nazwa1": "maliny",
+            "nazwa2": "gruszka"
+        },
+        {
+            "nazwa1": "kotlet",
+            "nazwa2": "maliny"
+        },
+        {
+            "nazwa1": "kotlet",
+            "nazwa2": "śliwka"
+        },
+        {
+            "nazwa1": "kotlet",
+            "nazwa2": "gruszka"
+        },
+        {
+            "nazwa1": "śliwka",
+            "nazwa2": "maliny"
+        },
+        {
+            "nazwa1": "śliwka",
+            "nazwa2": "kotlet"
+        },
+        {
+            "nazwa1": "śliwka",
+            "nazwa2": "gruszka"
+        },
+        {
+            "nazwa1": "gruszka",
+            "nazwa2": "maliny"
+        },
+        {
+            "nazwa1": "gruszka",
+            "nazwa2": "kotlet"
+        },
+        {
+            "nazwa1": "gruszka",
+            "nazwa2": "śliwka"
+        },
+        {
+            "nazwa1": "burak",
+            "nazwa2": "szynka"
+        },
+        {
+            "nazwa1": "marchewka",
+            "nazwa2": "szynka"
+        },
+        {
+            "nazwa1": "pomidor",
+            "nazwa2": "szynka"
+        },
+        {
+            "nazwa1": "jabłko",
+            "nazwa2": "szynka"
+        },
+        {
+            "nazwa1": "maliny",
+            "nazwa2": "mleko"
+        },
+        {
+            "nazwa1": "kotlet",
+            "nazwa2": "mleko"
+        },
+        {
+            "nazwa1": "śliwka",
+            "nazwa2": "mleko"
+        },
+        {
+            "nazwa1": "gruszka",
+            "nazwa2": "mleko"
+        }
+    ],
+    "cel": {
+        "węglowodany": {
+            "min": 276,
+            "max": 279
+        },
+        "magnez": {
+            "min": 3,
+            "max": 5
+        },
+        "wapń": {
+            "min": 3,
+            "max": 5
+        },
+        "witaminki": {
+            "min": 3,
+            "max": 5
+        },
+        "tłuszcze": {
+            "min": 3,
+            "max": 5
+        },
+        "kolor": {
+            "min": 0,
+            "max": 100000
+        },
+        "białko": {
+            "min": 0,
+            "max": 100000
+        },
+        "szczęście": {
+            "min": 0,
+            "max": 100000
+        }
+    },
+    "cel_tygodniowy": {
+        "węglowodany": {
+            "min": 0,
+            "max": 100000
+        },
+        "magnez": {
+            "min": 21,
+            "max": 10000
+        },
+        "wapń": {
+            "min": 0,
+            "max": 10000
+        },
+        "witaminki": {
+            "min": 0,
+            "max": 10000
+        },
+        "tłuszcze": {
+            "min": 0,
+            "max": 35
+        },
+        "kolor": {
+            "min": 54,
+            "max": 56
+        },
+        "białko": {
+            "min": 320,
+            "max": 391
+        },
+        "szczęście": {
+            "min": 941,
+            "max": 943
+        }
+    }
+}

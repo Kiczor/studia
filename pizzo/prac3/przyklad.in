@@ -1,0 +1,8 @@
+{
+    "pakiety":     ["libcurl3", "libcurl4", "firefox", "google-chrome", "safari"],
+    "kolizje":     [{"pakiet": "libcurl3", "koliduje_z": "libcurl4"}],
+    "wymagania":   [{"pakiet": "firefox", "wymaga": ["libcurl4"]},
+                    {"pakiet": "google-chrome", "wymaga": ["libcurl3"]},
+                    {"pakiet": "safari", "wymaga": ["libcurl4", "libcurl3"]}],
+    "instalowane": ["firefox", "safari"]
+}
