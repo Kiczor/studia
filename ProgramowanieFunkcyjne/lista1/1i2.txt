@@ -1,0 +1,8 @@
+fun x y -> x;;
+- : 'a -> 'b -> 'a = <fun>
+let compose f g arg = f(g(arg));;
+val compose : ('a -> 'b) -> ('c -> 'a) -> 'c -> 'b = <fun>
+fun a b -> if true then a else b;;
+- : 'a -> 'a -> 'a = <fun>
+fun x -> List.hd [];;
+- : 'a -> 'b = <fun>  
