@@ -38,3 +38,7 @@ Java project link: https://github.com/2torial/GeoConsole
 Machine Learning project: https://github.com/Kiczor/studia/tree/main/MachineLearning/Project
 
 Evolutionary Algorithms project: https://github.com/Kiczor/studia/tree/main/AlgorytmyEwolucyjne/projekt
+
+Neural networks project: https://github.com/Kiczor/studia/tree/main/NeuralNetworks/projekt
+
+Final thesis: https://github.com/Kiczor/studia/tree/main/Thesis
