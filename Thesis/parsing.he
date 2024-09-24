@@ -1,0 +1,135 @@
+import String
+import Char
+import Int
+import List
+
+(*computation model*)
+signature Parse (A: Type) =
+| satisfy: (Char -> Option A) => Unit
+| get: Unit => Pair (Pair Bool (List (Option A))) (List Char)
+| put: Pair (Pair Bool (List (Option A))) (List Char) => Unit
+
+data rec StateElem (E: Effect) (T: Type) = { run: Bool -> [E] List (StateElem E T) -> T }
+
+signature Branch  =
+| fail: Unit => Unit
+| commit: Unit => Unit
+| flip: Unit => Bool
+
+let parser (init: List Char) = 
+    handler
+    | satisfy f => fn (prevsuccess, parsed, cont) =>
+        let (result, rest) = 
+            match cont with
+            | x::xs => ((f x), xs)
+            | [] => (None, [])
+            end
+        in match result with
+            | Some x => resume () (prevsuccess, result::parsed, rest)
+            | None => resume (fail ()) (False, result::parsed, rest)
+            end
+    | get _     => fn s => resume s s
+    | put s     => fn _ => resume () s
+    | return x  => fn _ => x 
+    | finally f => f (True, [], init)
+    end
+
+let branchhandler initstate =
+    handler
+    | fail ()   => fn state => 
+        match state with
+        | []    => resume () []
+        | f::fs => f.run False fs
+        end
+    | commit res => fn state => 
+        match state with
+        | []    => None
+        | f::fs => resume res fs
+        end
+    | flip ()   => fn state => resume True ({run=resume}::state)
+    | return x  => fn _ => Some x
+    | finally f => f initstate
+    end
+
+(*end of comp model*)
+
+(*expressions*)
+let isInt () =
+    satisfy (fn c => if Char.isDigit c then Some c else None)
+
+let notInt () =
+    satisfy (fn c => if Char.isDigit c then None else Some c)
+
+let isLowerCaseLetter () =
+    satisfy (fn c => if Char.code c >= Char.code 'a' && Char.code c <= Char.code 'z' then Some c else None)
+
+let isUpperCaseLetter () =
+    satisfy (fn c => if Char.code c >= Char.code 'A' && Char.code c <= Char.code 'Z' then Some c else None)
+
+let isSpace () =
+    satisfy (fn c => if Char.code c = Char.code ' ' then Some c else None)
+
+let alwaysTrue () =
+    satisfy (fn c => Some c)
+
+let alwaysFalse () =
+    satisfy (fn c => None)
+
+let isLetter letter () =
+    satisfy (fn c => if Char.code c = Char.code letter then Some c else None)
+
+
+let orElse f1 f2 () =
+    if ( flip () ) then (
+        f1 ();
+        commit ()
+    )
+    else (
+        f2 ()
+    )
+
+(*orelse chain*)
+let choice `a xs =
+    match xs with
+    | [] => commit `a
+    | e::exprlist => List.foldl (fn s x => orElse `a s x) e exprlist
+    end
+
+(*repeat function t times*)
+let repeat f t =
+    let rec aux times =
+        if times <= 1 then f else (fn () => f (); (aux (times - 1)) ())
+    in aux t
+
+(*various functions*)
+let strtolist st =
+    let strlen = (String.length st) in 
+        let rec aux cnt =
+            if cnt = strlen
+                then []
+                else (String.get cnt st) :: (aux (cnt + 1))
+        in aux 0
+
+
+let doparse expr xs () =
+    handle `a in 
+        handle `b in 
+            expr `a `b ()
+        with parser xs
+    with branchhandler []
+
+let parsewrapped expr xs () =
+    let result = ( 
+        handle `a in 
+            handle `b in 
+                expr `a `b ()
+            with parser xs
+        with branchhandler [] 
+        )
+    in match result with
+    | None => [None]
+    | Some (success, parsed, rest) => List.rev parsed
+    end
+
+let parsewrappedstring expr xss () =
+    let xs = strtolist xss in parsewrapped expr xs ()
