@@ -31,4 +31,5 @@ PIZZO (Podstawy i Zastosowania Złożoności Obliczeniowej) - Basics and usage o
 
 
 Java project link: https://github.com/2torial/GeoConsole
+
 Machine Learning project https://github.com/Kiczor/studia/tree/main/MachineLearning/Project
