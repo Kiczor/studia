@@ -1,0 +1,5 @@
+doczytać
+wektory własne
+elipsa
+metoda pca
+pcao

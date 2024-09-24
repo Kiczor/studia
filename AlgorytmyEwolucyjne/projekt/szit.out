@@ -1,0 +1,27 @@
+mask: 1, best result: 0
+mask: 2, best result: 0
+mask: 4, best result: 0
+mask: 8, best result: 0
+mask: 16, best result: 4
+mask: 32, best result: 4
+mask: 64, best result: 4
+mask: 128, best result: 8
+mask: 256, best result: 8
+mask: 512, best result: 8
+mask: 1024, best result: 9
+mask: 2048, best result: 9
+mask: 4096, best result: 10
+mask: 8192, best result: 10
+mask: 16384, best result: 10
+mask: 32768, best result: 11
+board:
+####
+#..#
+#..#
+####
+after simulation board:
+####
+#..#
+#..#
+####
+best result: 12, bitmask:63903
