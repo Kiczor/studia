@@ -28,3 +28,7 @@ Wstęp do programowania w języku Python - Introduction to Python
 Zaawansowany kurs języka C++ - Advanced C++ course
 
 PIZZO (Podstawy i Zastosowania Złożoności Obliczeniowej) - Basics and usage of computational complexity
+
+
+Java project link: https://github.com/2torial/GeoConsole
+Machine Learning project https://github.com/Kiczor/studia/tree/main/MachineLearning/Project
