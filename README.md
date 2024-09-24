@@ -1,6 +1,7 @@
 # Studia
 
 Translation of course names to English:
+
 Kurs Linux - Linux course
 
 Kurs Języka Rust - Rust programming language course
